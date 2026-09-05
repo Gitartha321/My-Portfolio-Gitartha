@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gitartha Pratim Das — Frontend Developer & Software Developer</title>
+<meta name="description" content="Portfolio of Gitartha Pratim Das, a frontend and software developer building web applications, dashboards and AI/computer-vision oriented systems, with operations &amp; sales MIS experience at Sargam Ventures.">
+<meta name="author" content="Gitartha Pratim Das">
+<link rel="canonical" href="https://my-portfolio-gitartha-pratim-das.netlify.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gitartha Pratim Das — Frontend Developer & Software Developer">
+<meta property="og:description" content="Web applications, dashboards and computer-vision oriented systems, built with frontend and Python development. MIS Executive Intern, Operations & Sales, Sargam Ventures.">
+<meta property="og:url" content="https://my-portfolio-gitartha-pratim-das.netlify.app/">
+<meta property="og:image" content="/assets/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">GPD</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- ============ CUSTOM CURSOR (desktop only) ============ -->
+<div id="cursor" class="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"><span class="cursor-label"></span></div>
+</div>
+
+<!-- ============ FIXED 3D BACKGROUND ============ -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#home" class="nav-mark">GPD</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#home"><span data-idx="00">00</span> Home</a>
+    <a href="#about"><span data-idx="01">01</span> About</a>
+    <a href="#work"><span data-idx="02">02</span> Work</a>
+    <a href="#experience"><span data-idx="03">03</span> Experience</a>
+    <a href="#skills"><span data-idx="04">04</span> Skills</a>
+    <a href="#education"><span data-idx="05">05</span> Education</a>
+    <a href="#contact"><span data-idx="06">06</span> Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="btn-print" id="printBtnNav">Print Resume</button>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Mobile">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="btn-print btn-print--mobile" id="printBtnMobile">Print Resume</button>
+</div>
+
+<main id="main">
+
+  <!-- ============ 01 — HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow" aria-hidden="true"><span class="eyebrow-line"></span> Guwahati, Assam, India</p>
+        <h1 class="hero-name">
+          <span class="line reveal-name" data-text="GITARTHA">GITARTHA</span>
+          <span class="line reveal-name" data-text="PRATIM DAS">PRATIM DAS</span>
+        </h1>
+        <div class="hero-titles">
+          <span class="reveal-title">Frontend Developer</span>
+          <span class="reveal-title">Software Developer</span>
+        </div>
+        <p class="hero-sub reveal-sub">I build interactive web applications, digital systems, dashboards and technology-driven experiences.</p>
+        <div class="hero-cta reveal-cta">
+          <a href="#work" class="btn btn-primary" data-cursor="EXPLORE">View my work</a>
+          <button class="btn btn-ghost" id="printBtnHero" data-cursor="OPEN">Print resume</button>
+        </div>
+      </div>
+
+      <div class="hero-portrait reveal-portrait">
+        <div class="portrait-frame">
+          <img src="assets/portrait.jpg" alt="Portrait of Gitartha Pratim Das" class="portrait-img">
+          <div class="portrait-scanline" aria-hidden="true"></div>
+          <div class="portrait-frame-corner tl"></div>
+          <div class="portrait-frame-corner br"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"><i></i></div>
+    </div>
+  </section>
+
+  <!-- ============ 02 — ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-lead">
+        <p class="about-headline">A frontend and software developer who also keeps operations
+          and sales data honest — from React interfaces to MIS dashboards.</p>
+      </div>
+
+      <div class="about-body">
+        <p>Software developer with an M.Sc. in Information Technology and a B.Sc. in Computer
+          Science, with hands-on experience in frontend development using HTML, CSS and
+          JavaScript, alongside Python backend development, APIs, databases and AI-oriented
+          applications.</p>
+        <p>Built and deployed web-based projects including a vehicle entry–exit system with
+          real-time license plate recognition, administrative controls, dashboards and
+          analytics — with a strong foundation in software development, database
+          integration, testing and system deployment.</p>
+        <p>Alongside development work, currently interning as an MIS Executive in Operations
+          &amp; Sales at Sargam Ventures Private Limited, a Xiaomi distributor — maintaining
+          sales and operational data, preparing MIS reports, coordinating follow-ups and
+          building practical digital reporting tools such as a Travel Expense Summary and an
+          interactive sell-out scheme dashboard.</p>
+      </div>
+
+      <div class="about-facts">
+        <div class="fact">
+          <span class="fact-label">Based in</span>
+          <span class="fact-value">Guwahati, Assam, India</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Currently</span>
+          <span class="fact-value">MIS Executive Intern — Operations &amp; Sales, Sargam Ventures Pvt. Ltd.</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Education</span>
+          <span class="fact-value">M.Sc. Information Technology · B.Sc. Computer Science (Hons.)</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Stack</span>
+          <span class="fact-value">HTML · CSS · JavaScript · Python · FastAPI · MySQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 — SELECTED WORK ============ -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Selected work</h2>
+    </div>
+
+    <!-- PROJECT 01 -->
+    <article class="project project--vision" data-project="01">
+      <div class="project-visual" aria-hidden="true">
+        <svg viewBox="0 0 600 600" class="vision-svg">
+          <defs>
+            <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0"/>
+              <stop offset="50%" stop-color="#5EEAD4" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <g class="grid-plate" stroke="#2C3A45" stroke-width="0.6" fill="none" opacity="0.7">
+            <rect x="60" y="180" width="480" height="240" rx="6"/>
+            <line x1="60" y1="240" x2="540" y2="240"/>
+            <line x1="60" y1="300" x2="540" y2="300"/>
+            <line x1="60" y1="360" x2="540" y2="360"/>
+            <line x1="160" y1="180" x2="160" y2="420"/>
+            <line x1="300" y1="180" x2="300" y2="420"/>
+            <line x1="440" y1="180" x2="440" y2="420"/>
+          </g>
+          <rect x="180" y="255" width="240" height="90" rx="8" fill="none" stroke="#FFB454" stroke-width="1.4" class="plate-box"/>
+          <text x="200" y="310" fill="#FFB454" font-family="JetBrains Mono, monospace" font-size="20" letter-spacing="3">AS 07 GD 3210</text>
+          <rect x="60" y="180" width="480" height="240" fill="url(#scanGrad)" class="scan-bar"/>
+          <g class="node-dots" fill="#5EEAD4">
+            <circle cx="90" cy="210" r="2.5"/>
+            <circle cx="510" cy="210" r="2.5"/>
+            <circle cx="90" cy="390" r="2.5"/>
+            <circle cx="510" cy="390" r="2.5"/>
+          </g>
+        </svg>
+      </div>
+      <div class="project-copy">
+        <p class="project-eyebrow">Web application &middot; computer vision</p>
+        <h3 class="project-title">Vehicle Entry–Exit System</h3>
+        <p class="project-desc">A production-ready application for tracking vehicle entry and
+          exit, featuring real-time license plate recognition, administrative controls,
+          dashboards and analytics.</p>
+        <ul class="project-tags">
+          <li>Python</li><li>OpenCV</li><li>FastAPI</li><li>OCR</li><li>Dashboards</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- PROJECT 02 -->
+    <article class="project project--dash" data-project="02">
+      <div class="project-visual" aria-hidden="true">
+        <svg viewBox="0 0 600 600" class="dash-svg">
+          <g class="dash-grid" stroke="#2C3A45" stroke-width="0.6" fill="none" opacity="0.6">
+            <rect x="60" y="90" width="480" height="420" rx="10"/>
+            <line x1="60" y1="180" x2="540" y2="180"/>
+          </g>
+          <g class="bars">
+            <rect x="90" y="330" width="46" height="150" fill="#FFB454" opacity="0.85"/>
+            <rect x="160" y="270" width="46" height="210" fill="#FFB454" opacity="0.6"/>
+            <rect x="230" y="380" width="46" height="100" fill="#FFB454" opacity="0.85"/>
+            <rect x="300" y="230" width="46" height="250" fill="#FFB454" opacity="0.5"/>
+            <rect x="370" y="300" width="46" height="180" fill="#FFB454" opacity="0.85"/>
+          </g>
+          <polyline points="90,300 160,240 230,320 300,200 370,260 440,210" fill="none" stroke="#5EEAD4" stroke-width="2.2" class="kpi-line"/>
+          <circle cx="440" cy="210" r="4" fill="#5EEAD4"/>
+          <text x="90" y="130" fill="#8B9AA6" font-family="JetBrains Mono, monospace" font-size="14" letter-spacing="2">TARGET · SELL-OUT · ACHIEVEMENT</text>
+        </svg>
+      </div>
+      <div class="project-copy">
+        <p class="project-eyebrow">Live dashboard &middot; sales performance</p>
+        <h3 class="project-title">ASM 360 — A7 / A7 Pro 4G Sell-out Scheme Dashboard</h3>
+        <p class="project-desc">A live web dashboard built for a promoter sell-out incentive
+          scheme, surfacing target, sell-out and achievement figures, working dealers,
+          dealer eligibility, payout and model-wise performance.</p>
+        <ul class="project-tags">
+          <li>JavaScript</li><li>Dashboards</li><li>Data Visualization</li><li>KPI Reporting</li>
+        </ul>
+        <a href="https://gitartha321.github.io/Sargam_Ventures_Sellout_Scheme_A7-A7Pro4g/" target="_blank" rel="noopener" class="project-link" data-cursor="OPEN">View live project ↗</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 03 -->
+    <article class="project project--forms" data-project="03">
+      <div class="project-visual" aria-hidden="true">
+        <svg viewBox="0 0 600 600" class="forms-svg">
+          <g class="form-card" stroke="#2C3A45" stroke-width="0.6" fill="none" opacity="0.7">
+            <rect x="150" y="110" width="300" height="380" rx="10"/>
+            <line x1="180" y1="170" x2="420" y2="170"/>
+            <line x1="180" y1="220" x2="420" y2="220"/>
+            <line x1="180" y1="270" x2="380" y2="270"/>
+            <line x1="180" y1="320" x2="420" y2="320"/>
+          </g>
+          <g fill="#FFB454">
+            <rect x="180" y="150" width="90" height="8" rx="2" opacity="0.85"/>
+            <rect x="180" y="200" width="130" height="8" rx="2" opacity="0.6"/>
+            <rect x="180" y="250" width="70" height="8" rx="2" opacity="0.6"/>
+            <rect x="180" y="300" width="150" height="8" rx="2" opacity="0.6"/>
+          </g>
+          <g class="pin-group" stroke="#5EEAD4" stroke-width="1.6" fill="none">
+            <path d="M300 400 c0 -30 40 -30 40 -60 a40 40 0 1 0 -80 0 c0 30 40 30 40 60 z"/>
+            <circle cx="300" cy="340" r="10"/>
+          </g>
+        </svg>
+      </div>
+      <div class="project-copy">
+        <p class="project-eyebrow">Digital reporting tool</p>
+        <h3 class="project-title">Travel Expense Summary</h3>
+        <p class="project-desc">A digital reporting tool for collecting and organizing data
+          from ASMs visiting outstation locations, centralizing visit and expense
+          information for tracking and reporting.</p>
+        <ul class="project-tags">
+          <li>Forms</li><li>Data Collection</li><li>Reporting</li>
+        </ul>
+        <a href="https://script.google.com/macros/s/AKfycbzotjGzl4MSen6dtEm_7LVGO75RQRxNQ_ILEgCgUEVX2z9O-oHVjRzq06JohWZ7vJe3ww/exec" target="_blank" rel="noopener" class="project-link" data-cursor="OPEN">View live project ↗</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 04 -->
+    <article class="project project--files" data-project="04">
+      <div class="project-visual" aria-hidden="true">
+        <svg viewBox="0 0 600 600" class="files-svg">
+          <g stroke="#2C3A45" stroke-width="0.6" fill="none" opacity="0.7">
+            <path d="M140 220 h110 l24 26 h186 v220 h-320 z"/>
+          </g>
+          <g class="floating-docs" fill="none" stroke="#FFB454" stroke-width="1.4">
+            <rect x="230" y="150" width="120" height="150" rx="6" opacity="0.9"/>
+            <rect x="270" y="130" width="120" height="150" rx="6" opacity="0.55"/>
+          </g>
+          <g stroke="#5EEAD4" stroke-width="1.2" opacity="0.8">
+            <line x1="250" y1="185" x2="330" y2="185"/>
+            <line x1="250" y1="205" x2="330" y2="205"/>
+            <line x1="250" y1="225" x2="300" y2="225"/>
+          </g>
+        </svg>
+      </div>
+      <div class="project-copy">
+        <p class="project-eyebrow">Academic software project</p>
+        <h3 class="project-title">E-Notes File Sharing System</h3>
+        <p class="project-desc">A web application for sharing educational notes and files,
+          demonstrating web application development and a file-sharing workflow.</p>
+        <ul class="project-tags">
+          <li>PHP</li><li>MySQL</li><li>File Management</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- PROJECT 05 -->
+    <article class="project project--exam" data-project="05">
+      <div class="project-visual" aria-hidden="true">
+        <svg viewBox="0 0 600 600" class="exam-svg">
+          <g stroke="#2C3A45" stroke-width="0.6" fill="none" opacity="0.7">
+            <rect x="130" y="140" width="340" height="220" rx="8"/>
+            <rect x="230" y="380" width="140" height="14" rx="4"/>
+          </g>
+          <g stroke="#5EEAD4" stroke-width="1.4" fill="none" class="monitor-frame">
+            <rect x="150" y="160" width="300" height="180" rx="4"/>
+          </g>
+          <circle cx="300" cy="250" r="34" fill="none" stroke="#FFB454" stroke-width="1.6" class="proctor-eye"/>
+          <circle cx="300" cy="250" r="8" fill="#FFB454"/>
+          <line x1="150" y1="220" x2="450" y2="220" stroke="#5EEAD4" stroke-width="0.8" opacity="0.5" class="exam-scan"/>
+        </svg>
+      </div>
+      <div class="project-copy">
+        <p class="project-eyebrow">Academic software project</p>
+        <h3 class="project-title">Online Exam Proctoring System</h3>
+        <p class="project-desc">A web-based platform for online examinations, focused on
+          exam workflow and a monitoring interface.</p>
+        <ul class="project-tags">
+          <li>Web Development</li><li>Monitoring Interface</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ 04 — EXPERIENCE ============ -->
+  <section class="experience" id="experience">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-rail" aria-hidden="true"><span class="timeline-progress"></span></div>
+
+      <div class="timeline-entry">
+        <div class="timeline-marker"><span class="status-dot"></span></div>
+        <div class="timeline-content">
+          <p class="timeline-period">Current</p>
+          <h3 class="timeline-role">MIS Executive Intern — Operations &amp; Sales</h3>
+          <p class="timeline-org">Sargam Ventures Private Limited <span class="timeline-org-note">(Xiaomi distributor)</span></p>
+          <ul class="timeline-list">
+            <li>Maintaining and updating sales and operational data for day-to-day business activities.</li>
+            <li>Preparing and maintaining regular MIS reports to support sales and operational monitoring.</li>
+            <li>Following up with ASMs, sales personnel, dealers/retailers and other stakeholders for pending activities and required information.</li>
+            <li>Tracking operational activities and consolidating data from different sources into structured reports.</li>
+            <li>Supporting sales operations through data management, reporting and timely follow-up.</li>
+            <li>Monitoring target, sell-out and achievement-related information for sales and scheme activities.</li>
+            <li>Developing digital reporting tools and dashboards to improve data collection, visibility and monitoring.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 — SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Skills</h2>
+    </div>
+
+    <div class="skills-tabs" role="tablist" aria-label="Skill categories">
+      <button class="skills-tab is-active" role="tab" aria-selected="true" data-cat="all">All</button>
+      <button class="skills-tab" role="tab" aria-selected="false" data-cat="dev">Development</button>
+      <button class="skills-tab" role="tab" aria-selected="false" data-cat="data">Data &amp; AI</button>
+      <button class="skills-tab" role="tab" aria-selected="false" data-cat="mis">MIS &amp; Operations</button>
+    </div>
+
+    <div class="skills-field" id="skillsField">
+      <!-- dev -->
+      <span class="skill-node" data-cat="dev" data-group="Frontend">HTML</span>
+      <span class="skill-node" data-cat="dev" data-group="Frontend">CSS</span>
+      <span class="skill-node" data-cat="dev" data-group="Frontend">JavaScript</span>
+      <span class="skill-node" data-cat="dev" data-group="Backend">Python</span>
+      <span class="skill-node" data-cat="dev" data-group="Backend">FastAPI</span>
+      <span class="skill-node" data-cat="dev" data-group="Backend">Node.js</span>
+      <span class="skill-node" data-cat="dev" data-group="Backend">PHP</span>
+      <span class="skill-node" data-cat="dev" data-group="Backend">Java</span>
+      <span class="skill-node" data-cat="dev" data-group="Databases">MySQL</span>
+      <span class="skill-node" data-cat="dev" data-group="Databases">SQLite</span>
+      <span class="skill-node" data-cat="dev" data-group="Databases">phpMyAdmin</span>
+      <span class="skill-node" data-cat="dev" data-group="Development">API Integration</span>
+      <span class="skill-node" data-cat="dev" data-group="Development">Software Testing</span>
+      <!-- data / AI -->
+      <span class="skill-node" data-cat="data" data-group="Computer Vision / AI">OpenCV</span>
+      <span class="skill-node" data-cat="data" data-group="Computer Vision / AI">Artificial Intelligence</span>
+      <span class="skill-node" data-cat="data" data-group="Dashboards &amp; Automation">Interactive Dashboards</span>
+      <span class="skill-node" data-cat="data" data-group="Dashboards &amp; Automation">KPI Reporting</span>
+      <span class="skill-node" data-cat="data" data-group="Dashboards &amp; Automation">Performance Analysis</span>
+      <span class="skill-node" data-cat="data" data-group="Dashboards &amp; Automation">Digital Data Collection</span>
+      <span class="skill-node" data-cat="data" data-group="Dashboards &amp; Automation">Process Automation</span>
+      <!-- mis -->
+      <span class="skill-node" data-cat="mis" data-group="MIS &amp; Reporting">MIS Reports</span>
+      <span class="skill-node" data-cat="mis" data-group="MIS &amp; Reporting">Sales &amp; Operations Reporting</span>
+      <span class="skill-node" data-cat="mis" data-group="MIS &amp; Reporting">Data Management</span>
+      <span class="skill-node" data-cat="mis" data-group="MIS &amp; Reporting">Data Consolidation</span>
+      <span class="skill-node" data-cat="mis" data-group="MIS &amp; Reporting">Data Accuracy</span>
+      <span class="skill-node" data-cat="mis" data-group="MIS &amp; Reporting">Target vs. Achievement Tracking</span>
+      <span class="skill-node" data-cat="mis" data-group="Operations &amp; Sales">Follow-ups</span>
+      <span class="skill-node" data-cat="mis" data-group="Operations &amp; Sales">Activity Tracking</span>
+      <span class="skill-node" data-cat="mis" data-group="Operations &amp; Sales">Dealer/Retailer Data</span>
+      <span class="skill-node" data-cat="mis" data-group="Operations &amp; Sales">ASM Coordination</span>
+      <span class="skill-node" data-cat="mis" data-group="Operations &amp; Sales">Outstation Visit Data</span>
+      <span class="skill-node" data-cat="mis" data-group="Operations &amp; Sales">Scheme Performance Tracking</span>
+      <!-- additional -->
+      <span class="skill-node" data-cat="all" data-group="Additional">Writing Skills</span>
+      <span class="skill-node" data-cat="all" data-group="Additional">Communication Skills</span>
+    </div>
+  </section>
+
+  <!-- ============ 06 — EDUCATION ============ -->
+  <section class="education" id="education">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <div class="edu-list">
+      <div class="edu-entry">
+        <span class="edu-years">2023 — 2025</span>
+        <div class="edu-body">
+          <h3>M.Sc. Information Technology</h3>
+          <p>Gauhati University Center for Distance and Online Education (GUCDOE)</p>
+        </div>
+      </div>
+      <div class="edu-entry">
+        <span class="edu-years">2020 — 2023</span>
+        <div class="edu-body">
+          <h3>B.Sc. Computer Science (Hons.)</h3>
+          <p>Lalit Chandra Bharali College</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 — RESUME ============ -->
+  <section class="resume" id="resume">
+    <div class="resume-inner">
+      <h2 class="resume-title">Take a copy with you</h2>
+      <p class="resume-sub">A clean, print-ready version of this page — no motion, no
+        decoration, just the facts a recruiter needs.</p>
+      <div class="resume-actions">
+        <button class="btn btn-primary" id="printBtnResume">Print resume</button>
+        <!-- Only show a Download Resume (PDF) button once a real PDF exists at /assets/resume.pdf -->
+        <!-- <a href="assets/resume.pdf" class="btn btn-ghost" download>Download resume (PDF)</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 08 — CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="section-head">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Let's connect</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a href="mailto:gitarthapratimd@gmail.com" class="contact-line" data-cursor="EMAIL">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">gitarthapratimd@gmail.com</span>
+        </a>
+        <a href="tel:+918135901987" class="contact-line" data-cursor="CALL">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91 8135901987</span>
+        </a>
+        <div class="contact-line contact-line--static">
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Guwahati, Assam, India</span>
+        </div>
+
+        <div class="contact-social">
+          <a href="https://github.com/Gitartha321" target="_blank" rel="noopener" aria-label="GitHub" data-cursor="GITHUB">GitHub</a>
+          <a href="https://www.linkedin.com/in/gitartha-pratim-das-35bb70395/" target="_blank" rel="noopener" aria-label="LinkedIn" data-cursor="LINKEDIN">LinkedIn</a>
+          <a href="https://www.instagram.com/mini_rakhal?igsi=MWo5ZG0zM3FhcmhqdQ==" target="_blank" rel="noopener" aria-label="Instagram" data-cursor="INSTAGRAM">Instagram</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <!-- Wired to Web3Forms. Replace YOUR_ACCESS_KEY_HERE with a free key from
+             https://web3forms.com pointed at gitarthapratimd@gmail.com. See README. -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="checkbox" name="botcheck" class="botcheck" style="display:none">
+
+        <div class="field">
+          <label for="f-name">Name</label>
+          <input type="text" id="f-name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input type="email" id="f-email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-subject">Subject</label>
+          <input type="text" id="f-subject" name="subject" required>
+        </div>
+        <div class="field">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="formSubmit">
+          <span class="btn-state btn-state--idle">Send message</span>
+          <span class="btn-state btn-state--sending">Sending…</span>
+        </button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 09 — FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-top">
+    <span class="footer-mark">GITARTHA PRATIM DAS</span>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑ Top</button>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <span class="footer-label">Location</span>
+      <span>Guwahati, Assam, India</span>
+    </div>
+    <div class="footer-col">
+      <span class="footer-label">Contact</span>
+      <a href="mailto:gitarthapratimd@gmail.com">gitarthapratimd@gmail.com</a>
+      <a href="tel:+918135901987">+91 8135901987</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-label">Social</span>
+      <a href="https://github.com/Gitartha321" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/gitartha-pratim-das-35bb70395/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/mini_rakhal?igsi=MWo5ZG0zM3FhcmhqdQ==" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-label">Site</span>
+      <a href="#home">Navigation</a>
+      <button class="footer-print" id="printBtnFooter">Print resume</button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Gitartha Pratim Das</span>
+  </div>
+</footer>
+
+<!-- ============ PRINT-ONLY RESUME ============ -->
+<div class="print-resume" id="printResume">
+  <header class="pr-header">
+    <h1>Gitartha Pratim Das</h1>
+    <p>Frontend Developer &middot; Software Developer</p>
+    <p class="pr-contact">Guwahati, Assam, India &middot; gitarthapratimd@gmail.com &middot; +91 8135901987</p>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>Software developer with an M.Sc. in Information Technology and a B.Sc. in Computer
+      Science, with hands-on experience in frontend development (HTML, CSS, JavaScript)
+      alongside Python backend development, APIs, databases and AI-oriented applications.
+      Built and deployed web-based projects including a vehicle entry–exit system with
+      real-time license plate recognition, administrative controls, dashboards and
+      analytics. Also experienced in operations &amp; sales MIS reporting.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <h3>MIS Executive Intern — Operations &amp; Sales</h3>
+    <p class="pr-org">Sargam Ventures Private Limited (Xiaomi distributor) — Current</p>
+    <ul>
+      <li>Maintaining and updating sales and operational data for day-to-day business activities.</li>
+      <li>Preparing and maintaining regular MIS reports to support sales and operational monitoring.</li>
+      <li>Following up with ASMs, sales personnel, dealers/retailers and other stakeholders.</li>
+      <li>Tracking operational activities and consolidating data from multiple sources into structured reports.</li>
+      <li>Monitoring target, sell-out and achievement-related information for sales and scheme activities.</li>
+      <li>Developing digital reporting tools and dashboards to improve data collection and monitoring.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Vehicle Entry–Exit System</strong> — Python, OpenCV, FastAPI, OCR, Dashboards</li>
+      <li><strong>ASM 360 — A7/A7 Pro 4G Sell-out Scheme Dashboard</strong> — JavaScript, Dashboards, KPI Reporting</li>
+      <li><strong>Travel Expense Summary</strong> — Forms, Data Collection, Reporting</li>
+      <li><strong>E-Notes File Sharing System</strong> — PHP, MySQL, File Management</li>
+      <li><strong>Online Exam Proctoring System</strong> — Web Development, Monitoring Interface</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <p>HTML, CSS, JavaScript, Python, FastAPI, Node.js, PHP, Java, MySQL, SQLite,
+      phpMyAdmin, API Integration, Software Testing, OpenCV, Artificial Intelligence,
+      MIS Reports, Sales &amp; Operations Reporting, Data Management, Data Consolidation,
+      Target vs. Achievement Tracking, Dealer/Retailer Data, ASM Coordination,
+      Interactive Dashboards, KPI Reporting, Process Automation, Writing &amp; Communication.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>M.Sc. Information Technology</strong> — Gauhati University Center for Distance and Online Education (GUCDOE), 2023–2025</p>
+    <p><strong>B.Sc. Computer Science (Hons.)</strong> — Lalit Chandra Bharali College, 2020–2023</p>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
